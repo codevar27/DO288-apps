@@ -1,0 +1,63 @@
+{
+    "type": "bundle",
+    "id": "bundle--65b8b0e8-3e97-4749-bc42-75b98842e32b",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "id": "identity--d06281b8-b746-447b-bc22-15eaf23dee91",
+            "name": "proofpoint_async",
+            "type": "identity",
+            "identity_class": "system",
+            "created": "2021-06-29T03:27:48.694Z",
+            "modified": "2021-06-29T03:27:48.694Z"
+        },
+        {
+            "id": "observed-data--495f50ac-b43f-4e9f-952c-38c88d2b8cf9",
+            "type": "observed-data",
+            "created_by_ref": "identity--d06281b8-b746-447b-bc22-15eaf23dee91",
+            "created": "2021-10-04T06:39:15.034Z",
+            "modified": "2021-10-04T06:39:15.034Z",
+            "objects": {
+                "0": {
+                    "type": "url",
+                    "value": "https://www.mozilla.org/en-US/firefox"
+                },
+                "1": {
+                    "type": "x-proofpoint-msgevents",
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko",
+                    "ID": "448cceab-52ce-4638-9ad2-843c9b038c7b",
+                    "senderIP": "7",
+                    "GUID": "IEXA9uKty7y0XtTtXfEGlXdg1pZcutRU"
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "34.239.248.48"
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2"
+                },
+                "4": {
+                    "type": "email-addr",
+                    "value": "0100017c3019caeb-8d083606-04bf-41ff-9d24-85682bff3328-000000@amazonses.com"
+                },
+                "5": {
+                    "type": "email-message",
+                    "sender_ref": "4",
+                    "to_refs": "6"
+                },
+                "6": {
+                    "type": "email-addr",
+                    "value": "xxx@abc.com"
+                },
+                "7": {
+                    "type": "ipv4-addr",
+                    "value": "54.240.11.32"
+                }
+            },
+            "first_observed": "2021-10-04T06:39:15.034Z",
+            "last_observed": "2021-10-04T06:39:15.034Z",
+            "number_observed": 1
+        }
+    ]
+}
