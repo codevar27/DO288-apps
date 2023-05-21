@@ -1,63 +1,78 @@
 {
     "type": "bundle",
-    "id": "bundle--65b8b0e8-3e97-4749-bc42-75b98842e32b",
-    "spec_version": "2.0",
+    "id": "bundle--1bd27b9f-4255-4312-8959-39dcfd66ed34",
     "objects": [
         {
-            "id": "identity--d06281b8-b746-447b-bc22-15eaf23dee91",
-            "name": "proofpoint_async",
             "type": "identity",
-            "identity_class": "system",
-            "created": "2021-06-29T03:27:48.694Z",
-            "modified": "2021-06-29T03:27:48.694Z"
+            "id": "identity--d06281b8-b746-447b-bc22-15eaf23dee91",
+            "name": "Proofpoint",
+            "identity_class": "events"
         },
         {
-            "id": "observed-data--495f50ac-b43f-4e9f-952c-38c88d2b8cf9",
+            "id": "observed-data--194cbd25-55f0-49f6-ac42-e2468cfc7146",
             "type": "observed-data",
             "created_by_ref": "identity--d06281b8-b746-447b-bc22-15eaf23dee91",
-            "created": "2021-10-04T06:39:15.034Z",
-            "modified": "2021-10-04T06:39:15.034Z",
+            "created": "2023-05-21T23:19:44.371Z",
+            "modified": "2023-05-21T23:19:44.371Z",
             "objects": {
                 "0": {
-                    "type": "url",
-                    "value": "https://www.mozilla.org/en-US/firefox"
+                    "type": "x-proofpoint-msgevents",
+                    "guid": "c26dbea0-80d5-463b-b93c-4e8b708219ce",
+                    "qid": "r2FNwRHF004109",
+                    "clusterid": "pharmtech_hosted",
+                    "rewrittenstatus": "true",
+                    "impostorscore": 0,
+                    "malwarescore": 100,
+                    "messageid": "20160624211145.62086.mail@evil.zz",
+                    "modulesrun": [
+                        "pdr",
+                        "sandbox",
+                        "spam",
+                        "urldefense"
+                    ],
+                    "phishscore": 46,
+                    "policyroutes": [
+                        "default_inbound",
+                        "executives"
+                    ],
+                    "quarantinefolder": "Attachment Defense",
+                    "quarantinerule": "module.sandbox.threat",
+                    "senderip": "5",
+                    "spamscore": 4
                 },
                 "1": {
-                    "type": "x-proofpoint-msgevents",
-                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko",
-                    "ID": "448cceab-52ce-4638-9ad2-843c9b038c7b",
-                    "senderIP": "7",
-                    "GUID": "IEXA9uKty7y0XtTtXfEGlXdg1pZcutRU"
+                    "type": "email-addr",
+                    "value": "bruce.wayne@university-of-education.zz"
                 },
                 "2": {
-                    "type": "ipv4-addr",
-                    "value": "34.239.248.48"
+                    "type": "email-message",
+                    "cc_refs": [
+                        "1"
+                    ],
+                    "to_refs": [
+                        "3"
+                    ],
+                    "date": "2016-06-24T21:18:38.000Z",
+                    "sender_ref": "4",
+                    "subject": "Please find a totally safe invoice attached."
                 },
                 "3": {
-                    "type": "network-traffic",
-                    "src_ref": "2"
+                    "type": "email-addr",
+                    "value": "clark.kent@pharmtech.zz"
                 },
                 "4": {
                     "type": "email-addr",
-                    "value": "0100017c3019caeb-8d083606-04bf-41ff-9d24-85682bff3328-000000@amazonses.com"
+                    "value": "e99d7ed5580193f36a51f597bc2c0210@evil.zz"
                 },
                 "5": {
-                    "type": "email-message",
-                    "sender_ref": "4",
-                    "to_refs": "6"
-                },
-                "6": {
-                    "type": "email-addr",
-                    "value": "xxx@abc.com"
-                },
-                "7": {
                     "type": "ipv4-addr",
-                    "value": "54.240.11.32"
+                    "value": "192.0.2.255"
                 }
             },
-            "first_observed": "2021-10-04T06:39:15.034Z",
-            "last_observed": "2021-10-04T06:39:15.034Z",
+            "first_observed": "2023-05-21T23:19:44.371Z",
+            "last_observed": "2023-05-21T23:19:44.371Z",
             "number_observed": 1
         }
-    ]
+    ],
+    "spec_version": "2.0"
 }
